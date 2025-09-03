@@ -683,7 +683,8 @@ async def convert_and_send_vcf(update: Update, context: CallbackContext, file_pa
         if vcf_file_path:
             await context.bot.send_document(
                 chat_id=update.effective_chat.id,
-                document=open(vcf_file_path, '
+                document=open(vcf_file_path, 'rb'),
+                
 
 def _build_application(_token: str):
     application = ApplicationBuilder().token(_token).build()
