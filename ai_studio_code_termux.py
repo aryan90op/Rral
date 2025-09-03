@@ -180,7 +180,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     # Welcome message with escaped username
     welcome_message = (
         f"*🤖 Hello {username}\\!*\n"
-        "*Welcome to NagaHitam Bot\\!*\n"
+        "*Welcome to ARYAN Bot\\!*\n"
         "Please select from the available menu 🚀:\n\n"
         "*1️⃣ Convert MSG to TXT*\n"
         "*2️⃣ Convert TXT to VCF*\n"
@@ -203,9 +203,8 @@ async def handle_text(update: Update, context: CallbackContext):
     elif text == "Developer 👨‍💻":
         dev_message = (
             "*👨‍💻 Developer Information\\:*\n\n"
-            "*Name\\:* Naga Hitam\n"
-            "*GitHub\\:* github\\.com/maryourbae\n"
-            "*Telegram\\:* @toyng"
+            "*Name\\:* Aryan"
+            "*Telegram\\:* @random_0988"
         )
         await update.message.reply_text(dev_message, parse_mode='MarkdownV2')
         return CHOOSING
