@@ -684,6 +684,14 @@ async def convert_and_send_vcf(update: Update, context: CallbackContext, file_pa
             await context.bot.send_document(
                 chat_id=update.effective_chat.id,
                 document=open(vcf_file_path, 'rb'),
+                filename=os.path.basename(vcf_file_path)
+            )
+        else:
+            await update.message.reply_text("❌ An error occurred: VCF file could not be created.")
+    
+    except Exception as e:
+        await update.message.reply_text(f"❌ An error occurred: {str(e)}")
+
                 
 
 def _build_application(_token: str):
