@@ -1,0 +1,7 @@
+python-telegram-bot==20.3
+extract-msg
+vobject
+tzlocal
+chardet
+olefile
+compressed-rtf
